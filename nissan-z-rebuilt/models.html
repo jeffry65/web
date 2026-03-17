@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nissan Z Archive — Models</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Nissan Z Archive<small>Completed visual draft / MVP prototype</small></a>
+    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav">
+      <a href="index.html" class="">Home</a>
+      <a href="models.html" class="active">Models</a>
+      <a href="archive.html" class="">Archive</a>
+      <a href="about.html" class="">About</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <h1>Models</h1>
+      <p>Browse the cars shown in the prototype direction. Use the search bar or filter buttons to test the browsing flow. This page is designed to be clear enough for peer feedback on navigation, hierarchy, and scale.</p>
+    </section>
+    <div class="filters">
+      <input class="search" type="search" placeholder="Search by model, generation, or era" data-model-search />
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="classic">Classic</button>
+      <button class="filter-btn" data-filter="modern">Modern</button>
+      <button class="filter-btn" data-filter="current">Current</button>
+    </div>
+    <div class="models-grid">
+      <article class="model-card" data-model-card data-era="classic">
+        <div class="model-thumb"><img src="assets/240z-black.png" alt="Datsun 240Z / Fairlady Z" /></div>
+        <div class="model-content">
+          <div class="meta-row"><span class="tag">1969–1973</span><span class="tag">S30</span></div>
+          <h3>Datsun 240Z / Fairlady Z</h3>
+          <p>The 240Z introduced the Z-car identity with a clean fastback shape, a driver-focused cabin, and an affordable sports-car feel. It became the visual starting point for the entire archive.</p>
+          <div class="button-row"><a class="button" href="models/240z-fairlady-z.html">View model</a></div>
+        </div>
+      </article>
+
+      <article class="model-card" data-model-card data-era="modern">
+        <div class="model-thumb"><img src="assets/300zx-z32.webp" alt="Nissan 300ZX" /></div>
+        <div class="model-content">
+          <div class="meta-row"><span class="tag">1989–2000</span><span class="tag">Z32</span></div>
+          <h3>Nissan 300ZX</h3>
+          <p>The Z32 pushed the Z into a more advanced 1990s era. Its body became wider and smoother, with a more integrated design language than the earlier cars.</p>
+          <div class="button-row"><a class="button" href="models/300zx-z32.html">View model</a></div>
+        </div>
+      </article>
+
+      <article class="model-card" data-model-card data-era="modern">
+        <div class="model-thumb"><img src="assets/350z.webp" alt="Nissan 350Z" /></div>
+        <div class="model-content">
+          <div class="meta-row"><span class="tag">2002–2009</span><span class="tag">Z33</span></div>
+          <h3>Nissan 350Z</h3>
+          <p>The 350Z reintroduced the Z as a modern performance coupe after a gap in production. It simplified the shape into a short, solid, planted stance that became central to 2000s Nissan performance culture.</p>
+          <div class="button-row"><a class="button" href="models/350z.html">View model</a></div>
+        </div>
+      </article>
+
+      <article class="model-card" data-model-card data-era="modern">
+        <div class="model-thumb"><img src="assets/370z-white.png" alt="Nissan 370Z NISMO" /></div>
+        <div class="model-content">
+          <div class="meta-row"><span class="tag">2009–2020s</span><span class="tag">Z34</span></div>
+          <h3>Nissan 370Z NISMO</h3>
+          <p>The 370Z refined the Z33 formula with tighter proportions and a more aggressive front end. NISMO versions amplified the motorsport feel through aero and chassis-focused styling.</p>
+          <div class="button-row"><a class="button" href="models/370z-nismo.html">View model</a></div>
+        </div>
+      </article>
+
+      <article class="model-card" data-model-card data-era="current">
+        <div class="model-thumb"><img src="assets/new-z-nismo.jpg" alt="Nissan Z NISMO" /></div>
+        <div class="model-content">
+          <div class="meta-row"><span class="tag">2020s–current</span><span class="tag">RZ34</span></div>
+          <h3>Nissan Z NISMO</h3>
+          <p>The current Z reinterprets historic Z cues with a modern body and lighting package. Its profile and roofline reference earlier generations while the surfacing is clean and current.</p>
+          <div class="button-row"><a class="button" href="models/new-z-nismo.html">View model</a></div>
+        </div>
+      </article></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Nissan Z Archive student prototype</p>
+    <p>Built from the uploaded HTML/CSS direction and the user-provided car images.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
